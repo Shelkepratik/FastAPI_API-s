@@ -1,0 +1,37 @@
+{
+    "S001": {
+        "name": "Pratik Shelke",
+        "age": 23,
+        "city": "Pune",
+        "course": "MCA",
+        "marks": 92
+    },
+    "S002": {
+        "name": "Rahul Patil",
+        "age": 22,
+        "city": "Mumbai",
+        "course": "MCA",
+        "marks": 85
+    },
+    "S003": {
+        "name": "Sneha Sharma",
+        "age": 21,
+        "city": "Pune",
+        "course": "BCA",
+        "marks": 88
+    },
+    "S004": {
+        "name": "Amit Joshi",
+        "age": 23,
+        "city": "Nashik",
+        "course": "MCA",
+        "marks": 78
+    },
+    "S005": {
+        "name": "Priya Deshmukh",
+        "age": 22,
+        "city": "Pune",
+        "course": "BCA",
+        "marks": 95
+    }
+}

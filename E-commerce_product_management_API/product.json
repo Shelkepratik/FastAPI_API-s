@@ -1,0 +1,43 @@
+
+{
+    "P001": {
+        "name": "Samsung Galaxy S24",
+        "category": "Electronics",
+        "brand": "Samsung",
+        "price": 65000,
+        "stock": 10,
+        "rating": 4.5
+    },
+    "P002": {
+        "name": "HP Laptop",
+        "category": "Electronics",
+        "brand": "HP",
+        "price": 55000,
+        "stock": 5,
+        "rating": 4.3
+    },
+    "P003": {
+        "name": "Wireless Mouse",
+        "category": "Accessories",
+        "brand": "Logitech",
+        "price": 800,
+        "stock": 0,
+        "rating": 4.1
+    },
+    "P004": {
+        "name": "Python Programming Book",
+        "category": "Books",
+        "brand": "TechPress",
+        "price": 600,
+        "stock": 20,
+        "rating": 4.8
+    },
+    "P005": {
+        "name": "Nike Running Shoes",
+        "category": "Fashion",
+        "brand": "Nike",
+        "price": 3500,
+        "stock": 15,
+        "rating": 4.4
+    }
+}
