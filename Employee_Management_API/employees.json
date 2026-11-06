@@ -1,0 +1,47 @@
+{
+    "101": {
+        "name": "Pratik Shelke",
+        "email": "pratik@gmail.com",
+        "department": "IT",
+        "designation": "Python Developer",
+        "salary": 600000,
+        "experience": 1,
+        "status": "Active"
+    },
+    "102": {
+        "name": "Rahul Patil",
+        "email": "rahul@gmail.com",
+        "department": "HR",
+        "designation": "HR Executive",
+        "salary": 450000,
+        "experience": 2,
+        "status": "Active"
+    },
+    "103": {
+        "name": "Sneha Sharma",
+        "email": "sneha@gmail.com",
+        "department": "Finance",
+        "designation": "Financial Analyst",
+        "salary": 700000,
+        "experience": 3,
+        "status": "Inactive"
+    },
+    "104": {
+        "name": "Amit Joshi",
+        "email": "amit@gmail.com",
+        "department": "IT",
+        "designation": "AI Engineer",
+        "salary": 800000,
+        "experience": 2,
+        "status": "Active"
+    },
+    "105": {
+        "name": "Rohit Sharma",
+        "email": "rohit@gmail.com",
+        "department": "IT",
+        "designation": "Python Developer",
+        "salary": 450000,
+        "experience": 2,
+        "status": "Active"
+    }
+}
