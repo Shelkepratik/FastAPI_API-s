@@ -1,11 +1,12 @@
 from fastapi import FastAPI,Path,HTTPException
 from typing import Annotated,Literal
 from pydantic import BaseModel,Field,EmailStr
+from fastapi.responses import JSONResponse
 import json
 
 app=FastAPI()
 
-class Empoyee(BaseModel):
+class Empolyee(BaseModel):
     name:Annotated[str,Field(max_length=50,min_length=2,description="empoyee name")]
     email:EmailStr
     department:Literal["IT","HR","Finance","sales","Marketing"]
@@ -53,8 +54,8 @@ def show_empolyee_deparment(department_name:str=Path(...)):
     return result
 
 
-@app.post("/view",status_code=201)
-def add_empoyee(empolyee:Empoyee):
+@app.post("/view",status_code=201)#status_code=201 "add the empolyee"
+def add_empoyee(empolyee:Empolyee):
     empolyees=load_data()
     empolyee_ids=[int(key) for key in empolyees.keys()]
     new_id=max(empolyee_ids,default=100)+1
@@ -63,6 +64,18 @@ def add_empoyee(empolyee:Empoyee):
     return{
         "message":"Employee added successfully"
     }
+
+@app.put("/edit/{empolyee_id}")
+def update_data(empolyee_id:str,empolyee: Empolyee):
+    data=load_data()
+    if empolyee_id not in data:
+        raise HTTPException(
+            status_code=404,
+            detail="empolyee not found"
+        )
+    data[empolyee_id]=empolyee.model_dump()
+    save_empoyee(data)
+    return JSONResponse(content="message:update successfully")
     
     
 
